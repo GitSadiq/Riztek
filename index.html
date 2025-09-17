@@ -13,7 +13,7 @@
 <form action="https://nwfcu--dvp2.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DU700000653gA" method="POST">
 
 <input type=hidden name="orgid" value="00DU700000653gA">
-<input type=hidden name="retURL" value="https://github.com/GitSadiq/Riztek/edit/main/index.html">
+<input type=hidden name="retURL" value="https://htmlpreview.github.io/?https://github.com/GitSadiq/Riztek/blob/main/index.html">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -33,31 +33,33 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<label for="type">Type</label><select  id="type" name="type">
-<option value="">--None--</option>
-<option value="Account Fraud">Account Fraud</option>
-<option value="Account Research">Account Research</option>
-<option value="ACH General Inquiry">ACH and Wires</option>
-</select><br>
-
-Sub-Type:<select  id="00NUb000005s7ko" name="00NUb000005s7ko" title="Sub-Type">
-<option value="">--None--</option>
-  <!-- Account Fraud -->
-  <option value="ACH Fraud">Account Fraud</option>
-  <option value="Electronic Services Fraud">Online or Mobile Banking</option>
-  <option value="Card Fraud">Card Fraud</option>
-  <option value="Check Fraud">Check Fraud</option>
+<label for="type">Type</label>
+  <select  id="type" name="type">
+    <option value="">--None--</option>
+    <option value="Account Fraud">Account Fraud</option>
+    <option value="Account Research">Account Research</option>
+    <option value="ACH General Inquiry">ACH and Wires</option>
+  </select>
+  <br>
+<label for="Sub-Type">Sub-Type</label>
+  <select  id="00NUb000005s7ko" name="00NUb000005s7ko" title="Sub-Type">
+    <option value="">--None--</option>
+    <!-- Account Fraud -->
+    <option value="ACH Fraud">Account Fraud</option>
+    <option value="Electronic Services Fraud">Online or Mobile Banking</option>
+    <option value="Card Fraud">Card Fraud</option>
+    <option value="Check Fraud">Check Fraud</option>
+    
+    <!-- Account Research -->
+    <option value="Account Research">Account Research</option>
+    <option value="Commercial Loan Research">Commercial Loan</option>
+    <option value="Consumer Loan Research">Consumer Loan</option>
+    <option value="Mortgage Loan Research">Mortgage Loan</option>
   
-  <!-- Account Research -->
-  <option value="Account Research">Account Research</option>
-  <option value="Commercial Loan Research">Commercial Loan</option>
-  <option value="Consumer Loan Research">Consumer Loan</option>
-  <option value="Mortgage Loan Research">Mortgage Loan</option>
-
-  <!-- ACH and Wires -->
-  <option value="ACH General Inquiry">ACH General Inquiry</option>
-  <option value="General Inquiry">Wires</option>  
-</select><br>
+    <!-- ACH and Wires -->
+    <option value="ACH General Inquiry">ACH General Inquiry</option>
+    <option value="General Inquiry">Wires</option>  
+  </select><br>
 
 <input type="submit" name="submit">
 
