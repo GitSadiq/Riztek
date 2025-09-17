@@ -34,32 +34,94 @@
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
 <label for="type">Type</label>
-  <select  id="type" name="type">
-    <option value="">--None--</option>
-    <option value="Account Fraud">Account Fraud</option>
-    <option value="Account Research">Account Research</option>
-    <option value="ACH General Inquiry">ACH and Wires</option>
-  </select>
-  <br>
-<label for="Sub-Type">Sub-Type</label>
-  <select  id="00NUb000005s7ko" name="00NUb000005s7ko" title="Sub-Type">
-    <option value="">--None--</option>
-    <!-- Account Fraud -->
-    <option value="ACH Fraud">Account Fraud</option>
-    <option value="Electronic Services Fraud">Online or Mobile Banking</option>
-    <option value="Card Fraud">Card Fraud</option>
-    <option value="Check Fraud">Check Fraud</option>
-    
-    <!-- Account Research -->
-    <option value="Account Research">Account Research</option>
-    <option value="Commercial Loan Research">Commercial Loan</option>
-    <option value="Consumer Loan Research">Consumer Loan</option>
-    <option value="Mortgage Loan Research">Mortgage Loan</option>
-  
-    <!-- ACH and Wires -->
-    <option value="ACH General Inquiry">ACH General Inquiry</option>
-    <option value="General Inquiry">Wires</option>  
-  </select><br>
+<select id="type" name="type">
+  <option value="">--None--</option>
+  <option value="Account Fraud">Account Fraud</option>
+  <option value="Account Research">Account Research</option>
+  <option value="ACH General Inquiry">ACH and Wires</option>
+  <option value="Card Maintenance">Card Maintenance</option>
+  <option value="Check Request">Check Request</option>
+  <option value="Member Complaint">Complaint</option>
+  <option value="Loan Adjustment">Loan Maintenance</option>
+  <option value="Member Service">Member Service</option>
+  <option value="Payoff Request">Payoff Request</option>
+  <option value="Refund Request">Refund Request</option>
+  <option value="Account Statement">Statement Request</option>
+  <option value="Tax Form Request">Tax Forms</option>
+</select>
+<br>
+
+<!-- Sub-Type -->
+<label for="subtype">Sub-Type</label>
+<select id="subtype" name="00NUb000005s7ko" title="Sub-Type">
+  <option value="">--None--</option>
+  <!-- Account Fraud -->
+  <option value="ACH Fraud">Account Fraud</option>
+  <option value="Electronic Services Fraud">Online or Mobile Banking</option>
+  <option value="Card Fraud">Card Fraud</option>
+  <option value="Check Fraud">Check Fraud</option>
+  <!-- Account Research -->
+  <option value="Account Research">Account Research</option>
+  <option value="Commercial Loan Research">Commercial Loan</option>
+  <option value="Consumer Loan Research">Consumer Loan</option>
+  <option value="Mortgage Loan Research">Mortgage Loan</option>
+  <!-- ACH General Inquiry -->
+  <option value="ACH General Inquiry">ACH General Inquiry</option>
+  <option value="General Inquiry">Wires</option>
+  <!-- Card Maintenance -->
+  <option value="Add/Remove Authorized Signer">Authorized Signers</option>
+  <option value="Balance Transfer">Balance Transfer</option>
+  <option value="Close Card">Close Card</option>
+  <option value="Lost or Stolen">Lost or Stolen Card</option>
+  <!-- Check Request -->
+  <option value="Check Copies">Check Copies</option>
+  <option value="General">General</option>
+  <option value="Starter Checks">Starter Checks</option>
+  <!-- Member Complaint -->
+  <option value="">Complaint</option>
+  <!-- Loan Adjustment -->
+  <option value="Commercial Loan Adjustment">Commercial Loan Adjustment</option>
+  <option value="Consumer Loan Adjustment">Consumer Loan Adjustment</option>
+  <option value="Debt Protection">Debt Protection</option>
+  <option value="MBP">Extended Warranty</option>
+  <option value="GAP">GAP</option>
+  <option value="Insurance Verification">Insurance Verification</option>
+  <option value="Mortgage Loan Adjustment">Mortgage Loan Adjustment</option>
+  <option value="Title or Lien">Title or Lien</option>
+  <!-- Member Service -->
+  <option value="Account Paperwork">Account Documents</option>
+  <option value="Financial Account Closure">Close products (not entire account)</option>
+  <option value="Member Retention Request">Close Membership (entire account)</option>
+  <option value="Commercial Pre-Auth">Commerical Loan Automatic Payments</option>
+  <option value="Consumer Pre-Auth">Consumer Loan Automatic Payments</option>
+  <option value="Deposit Account Pre-Auth">Deposit Account Automatic Debits/Credits</option>
+  <option value="Mortgage Pre-Auth">Mortgage Automatic Payments</option>
+  <option value="General Information">General Information</option>
+  <option value="New Accounts">New Accounts</option>
+  <option value="Notification of Death">Notification of Death</option>
+  <option value="Troubleshooting">Online Payment Center/Paymentus</option>
+  <option value="POA">Power of Attorney</option>
+  <option value="Maintenance">Trust Accounts</option>
+  <option value="Troubleshooting">Zelle</option>
+  <!-- Payoff Request -->
+  <option value="Commercial Payoff">Commercial Loan</option>
+  <option value="Second Mortgage Payoff">Home Equity Loan</option>
+  <option value="First Mortgage Payoff">Mortgage Loan</option>
+  <!-- Refund Request -->
+  <option value="ATM">ATM</option>
+  <option value="Consumer Loan">Auto and Personal Loan</option>
+  <option value="Commercial Loan">Commercial Loan</option>
+  <option value="Refund Fees">Credit Card</option>
+  <option value="Mortgage Loan">Mortgage Loan</option>
+  <!-- Account Statement -->
+  <option value="Account Statement">Account</option>
+  <option value="Commercial Loan Statement">Commercial Loan</option>
+  <option value="Credit Card Statement">Credit Card</option>
+  <option value="Mortgage Statement">Mortgage</option>
+  <!-- Tax Form Request -->
+  <option value="General">General</option>
+  <option value="Mortgage">Mortgage</option>
+</select>
 
 <input type="submit" name="submit">
 
