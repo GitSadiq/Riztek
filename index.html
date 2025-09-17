@@ -33,73 +33,32 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<label for="type">Type</label>
-  <select  id="type" name="type" onchange="updateSubTypes()">
-    <option value="">--None--</option>
-    <option value="Account Fraud">Account Fraud</option>
-    <option value="Account Research">Account Research</option>
-    <option value="ACH General Inquiry">ACH and Wires</option>
-  </select>
-<br>
+<label for="type">Type</label><select  id="type" name="type">
+<option value="">--None--</option>
+<option value="Account Fraud">Account Fraud</option>
+<option value="Account Research">Account Research</option>
+<option value="ACH General Inquiry">ACH and Wires</option>
+</select><br>
 
-Sub-Type:<select  id="subtype" name="00NUb000005s7ko" title="Sub-Type">
+Sub-Type:<select  id="00NUb000005s7ko" name="00NUb000005s7ko" title="Sub-Type">
 <option value="">--None--</option>
   <!-- Account Fraud -->
-<!--   <option value="ACH Fraud">Account Fraud</option>
+  <option value="ACH Fraud">Account Fraud</option>
   <option value="Electronic Services Fraud">Online or Mobile Banking</option>
   <option value="Card Fraud">Card Fraud</option>
-  <option value="Check Fraud">Check Fraud</option> -->
+  <option value="Check Fraud">Check Fraud</option>
   
   <!-- Account Research -->
-<!--   <option value="Account Research">Account Research</option>
+  <option value="Account Research">Account Research</option>
   <option value="Commercial Loan Research">Commercial Loan</option>
   <option value="Consumer Loan Research">Consumer Loan</option>
   <option value="Mortgage Loan Research">Mortgage Loan</option>
- -->
+
   <!-- ACH and Wires -->
-<!--   <option value="ACH General Inquiry">ACH General Inquiry</option>
-  <option value="General Inquiry">Wires</option>   -->
+  <option value="ACH General Inquiry">ACH General Inquiry</option>
+  <option value="General Inquiry">Wires</option>  
 </select><br>
 
 <input type="submit" name="submit">
 
 </form>
-<script>
-  // Mapping of Type (Case) → Sub-Types
-  const subTypeOptions = {
-    "Account Fraud": [
-      { value: "ACH Fraud", text: "Account Fraud" },
-      { value: "Electronic Services Fraud", text: "Online or Mobile Banking" },
-      { value: "Card Fraud", text: "Card Fraud" },
-      { value: "Check Fraud", text: "Check Fraud" }
-    ],
-    "Account Research": [
-      { value: "Account Research", text: "Account Research" },
-      { value: "Commercial Loan Research", text: "Commercial Loan" },
-      { value: "Consumer Loan Research", text: "Consumer Loan" },
-      { value: "Mortgage Loan Research", text: "Mortgage Loan" }
-    ],
-    "ACH General Inquiry": [
-      { value: "ACH General Inquiry", text: "ACH General Inquiry" },
-      { value: "Wires", text: "Wires" }
-    ]
-  };
-
-  function updateSubTypes() {
-    const typeSelect = document.getElementById("type");
-    const subTypeSelect = document.getElementById("subtype");
-
-    // Clear existing options
-    subTypeSelect.innerHTML = '<option value="">--None--</option>';
-
-    const selectedType = typeSelect.value;
-    if (subTypeOptions[selectedType]) {
-      subTypeOptions[selectedType].forEach(opt => {
-        const option = document.createElement("option");
-        option.value = opt.value;
-        option.textContent = opt.text;
-        subTypeSelect.appendChild(option);
-      });
-    }
-  }
-</script>
