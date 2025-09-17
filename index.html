@@ -10,17 +10,17 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D2w00000RpLVz" method="POST">
+<form action="https://nwfcu--dvp2.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DU700000653gA" method="POST">
 
-<input type=hidden name="orgid" value="00D2w00000RpLVz">
-<input type=hidden name="retURL" value="https://github.com/GitSadiq/Riztek/blob/main/index.html">
+<input type=hidden name="orgid" value="00DU700000653gA">
+<input type=hidden name="retURL" value="https://github.com/GitSadiq/Riztek/edit/main/index.html">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 <!--  these lines if you wish to test in debug mode.                          -->
 <!--  <input type="hidden" name="debug" value=1>                              -->
 <!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="sadiqkhanach@outlook.com">                                       -->
+<!--  value="rizwan.ahmed@zennify.com">                                       -->
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
@@ -32,6 +32,19 @@
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="type">Type</label><select  id="type" name="type">
+<option value="">--None--</option>
+<option value="Account Fraud">Account Fraud</option>
+</select><br>
+
+Sub-Type:<select  id="00NUb000005s7ko" name="00NUb000005s7ko" title="Sub-Type">
+<option value="">--None--</option>
+<option value="ACH Fraud">Account Fraud</option>
+<option value="Electronic Services Fraud">Online or Mobile Banking</option>
+<option value="Card Fraud">Card Fraud</option>
+<option value="Check Fraud">Check Fraud</option>
+</select><br>
 
 <input type="submit" name="submit">
 
