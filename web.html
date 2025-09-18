@@ -26,16 +26,16 @@
   <option value="">--None--</option>
   <option value="Account Fraud">Account Fraud</option>
   <option value="Account Research">Account Research</option>
-  <option value="ACH General Inquiry">ACH and Wires</option>
+  <option value="ACH and Wires">ACH and Wires</option>
   <option value="Card Maintenance">Card Maintenance</option>
   <option value="Check Request">Check Request</option>
-  <option value="Member Complaint">Complaint</option>
-  <option value="Loan Adjustment">Loan Maintenance</option>
+  <option value="Complaint">Complaint</option>
+  <option value="Loan Maintenance">Loan Maintenance</option>
   <option value="Member Service">Member Service</option>
   <option value="Payoff Request">Payoff Request</option>
   <option value="Refund Request">Refund Request</option>
-  <option value="Account Statement">Statement Request</option>
-  <option value="Tax Form Request">Tax Forms</option>
+  <option value="Statement Request">Statement Request</option>
+  <option value="Tax Forms">Tax Forms</option>
 </select>
 <br>
 
@@ -49,31 +49,30 @@
 <input type="submit" name="submit">
 
 </form>
-
 <script>
 // Map of Type -> Sub-Type options
 const subTypeOptions = {
   "Account Fraud": [
-    {value: "ACH Fraud", label: "Account Fraud"},
-    {value: "Electronic Services Fraud", label: "Online or Mobile Banking"},
+    {value: "Account Fraud", label: "Account Fraud"},
+    {value: "Online or Mobile Banking", label: "Online or Mobile Banking"},
     {value: "Card Fraud", label: "Card Fraud"},
     {value: "Check Fraud", label: "Check Fraud"}
   ],
   "Account Research": [
     {value: "Account Research", label: "Account Research"},
-    {value: "Commercial Loan Research", label: "Commercial Loan"},
-    {value: "Consumer Loan Research", label: "Consumer Loan"},
-    {value: "Mortgage Loan Research", label: "Mortgage Loan"}
+    {value: "Commercial Loan", label: "Commercial Loan"},
+    {value: "Consumer Loan", label: "Consumer Loan"},
+    {value: "Mortgage Loan", label: "Mortgage Loan"}
   ],
   "ACH General Inquiry": [
     {value: "ACH General Inquiry", label: "ACH General Inquiry"},
-    {value: "General Inquiry", label: "Wires"}
+    {value: "Wires", label: "Wires"}
   ],
   "Card Maintenance": [
-    {value: "Add/Remove Authorized Signer", label: "Authorized Signers"},
+    {value: "Authorized Signers", label: "Authorized Signers"},
     {value: "Balance Transfer", label: "Balance Transfer"},
     {value: "Close Card", label: "Close Card"},
-    {value: "Lost or Stolen", label: "Lost or Stolen Card"}
+    {value: "Lost or Stolen Card", label: "Lost or Stolen Card"}
   ],
   "Check Request": [
     {value: "Check Copies", label: "Check Copies"},
@@ -81,51 +80,51 @@ const subTypeOptions = {
     {value: "Starter Checks", label: "Starter Checks"}
   ],
   "Member Complaint": [
-    {value: "", label: "Complaint"}
+    {value: "Complaint", label: "Complaint"}
   ],
   "Loan Adjustment": [
     {value: "Commercial Loan Adjustment", label: "Commercial Loan Adjustment"},
     {value: "Consumer Loan Adjustment", label: "Consumer Loan Adjustment"},
     {value: "Debt Protection", label: "Debt Protection"},
-    {value: "MBP", label: "Extended Warranty"},
+    {value: "Extended Warranty", label: "Extended Warranty"},
     {value: "GAP", label: "GAP"},
     {value: "Insurance Verification", label: "Insurance Verification"},
     {value: "Mortgage Loan Adjustment", label: "Mortgage Loan Adjustment"},
     {value: "Title or Lien", label: "Title or Lien"}
   ],
   "Member Service": [
-    {value: "Account Paperwork", label: "Account Documents"},
-    {value: "Financial Account Closure", label: "Close products (not entire account)"},
-    {value: "Member Retention Request", label: "Close Membership (entire account)"},
-    {value: "Commercial Pre-Auth", label: "Commerical Loan Automatic Payments"},
-    {value: "Consumer Pre-Auth", label: "Consumer Loan Automatic Payments"},
-    {value: "Deposit Account Pre-Auth", label: "Deposit Account Automatic Debits/Credits"},
-    {value: "Mortgage Pre-Auth", label: "Mortgage Automatic Payments"},
+    {value: "Account Documents", label: "Account Documents"},
+    {value: "Close products (not entire account)", label: "Close products (not entire account)"},
+    {value: "Close Membership (entire account)", label: "Close Membership (entire account)"},
+    {value: "Commerical Loan Automatic Payments", label: "Commerical Loan Automatic Payments"},
+    {value: "Consumer Loan Automatic Payments", label: "Consumer Loan Automatic Payments"},
+    {value: "Deposit Account Automatic Debits/Credits", label: "Deposit Account Automatic Debits/Credits"},
+    {value: "Mortgage Automatic Payments", label: "Mortgage Automatic Payments"},
     {value: "General Information", label: "General Information"},
     {value: "New Accounts", label: "New Accounts"},
     {value: "Notification of Death", label: "Notification of Death"},
-    {value: "Troubleshooting", label: "Online Payment Center/Paymentus"},
-    {value: "POA", label: "Power of Attorney"},
-    {value: "Maintenance", label: "Trust Accounts"},
-    {value: "Troubleshooting", label: "Zelle"}
+    {value: "Online Payment Center/Paymentus", label: "Online Payment Center/Paymentus"},
+    {value: "Power of Attorney", label: "Power of Attorney"},
+    {value: "Trust Accounts", label: "Trust Accounts"},
+    {value: "Zelle", label: "Zelle"}
   ],
   "Payoff Request": [
-    {value: "Commercial Payoff", label: "Commercial Loan"},
-    {value: "Second Mortgage Payoff", label: "Home Equity Loan"},
-    {value: "First Mortgage Payoff", label: "Mortgage Loan"}
+    {value: "Commercial Loan", label: "Commercial Loan"},
+    {value: "Home Equity Loan", label: "Home Equity Loan"},
+    {value: "Mortgage Loan", label: "Mortgage Loan"}
   ],
   "Refund Request": [
     {value: "ATM", label: "ATM"},
-    {value: "Consumer Loan", label: "Auto and Personal Loan"},
+    {value: "Auto and Personal Loan", label: "Auto and Personal Loan"},
     {value: "Commercial Loan", label: "Commercial Loan"},
-    {value: "Refund Fees", label: "Credit Card"},
+    {value: "Credit Card", label: "Credit Card"},
     {value: "Mortgage Loan", label: "Mortgage Loan"}
   ],
   "Account Statement": [
-    {value: "Account Statement", label: "Account"},
-    {value: "Commercial Loan Statement", label: "Commercial Loan"},
-    {value: "Credit Card Statement", label: "Credit Card"},
-    {value: "Mortgage Statement", label: "Mortgage"}
+    {value: "Account", label: "Account"},
+    {value: "Commercial Loan", label: "Commercial Loan"},
+    {value: "Credit Card", label: "Credit Card"},
+    {value: "Mortgage", label: "Mortgage"}
   ],
   "Tax Form Request": [
     {value: "General", label: "General"},
@@ -150,3 +149,4 @@ typeSelect.addEventListener("change", function() {
   }
 });
 </script>
+
