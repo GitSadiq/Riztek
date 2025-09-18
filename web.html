@@ -138,7 +138,7 @@ const subtypeSelect = document.getElementById("subtype");
 
 typeSelect.addEventListener("change", function() {
   const selectedType = this.value;
-  subtypeSelect.innerHTML = '<option value="">--None--</option>'; // reset
+  subtypeSelect.innerHTML = ''; // reset
   
   if (subTypeOptions[selectedType]) {
     subTypeOptions[selectedType].forEach(opt => {
